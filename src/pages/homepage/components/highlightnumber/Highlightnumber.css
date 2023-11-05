@@ -1,0 +1,42 @@
+.hlnumber {
+  background: linear-gradient(
+    95deg,
+    #95f9ff 0.55%,
+    #96ffe6 31.59%,
+    #87ffdb 88.72%
+  );
+  width: 100vw;
+  height: 165px;
+}
+.fournumber {
+  padding: 50px 368px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.sub_number {
+  text-align: center;
+}
+.sub_number p {
+  color: var(--2, #001a22);
+  text-align: center;
+  font-family: "SVN-Gilroy", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 44px */
+  letter-spacing: -2.2px;
+  text-transform: capitalize;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.sub_number span {
+  color: var(--2, #001a22);
+  text-align: center;
+  font-family: "SVN-Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.75px; /* 98.438% */
+  letter-spacing: 0.16px;
+}

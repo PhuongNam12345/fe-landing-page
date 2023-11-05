@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+// README
+// react-router
+// breakpoints
+// positions, display, flexbox. overflows
+
+//states, props
+
+### Project Directory Structure
+
+### 1. **`src/`**
+
+- `components/`: Holds React components used in the application (e.g., `Header.js`, `Footer.js`).
+  - `containers/`: Can contain larger React components (containers) or application pages.
+  - `assets/`: Contains static files such as images, CSS, and other static files.
