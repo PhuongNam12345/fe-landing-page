@@ -1,5 +1,4 @@
 import React from "react";
-import "../header/Header.js";
 import "./Highlightnumber.css";
 const HightlightNumber = () => {
   return (

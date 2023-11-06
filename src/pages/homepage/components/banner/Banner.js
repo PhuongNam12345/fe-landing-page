@@ -1,21 +1,23 @@
 import React from "react";
 // import Header from "../../components/header/Header";
-import videoBG from "../../../../assets/bg.mp4";
+import videoBG from "../assets/bg.mp4";
 import "./Banner.css";
+import Paragrapb from "../../../../components/paragraph/Paragrapb";
+import Heading from "../../../../components/heading/Heading";
 // import "./HomePage.css";
 const Banner = () => {
   return (
-    <div className="home_page">
+    <div className="banner">
       <video src={videoBG} autoPlay loop muted />
       <div className="content_home">
         <div className="left_content">
-          <h1>Công Nghệ Nâng Tầm Sức Khỏe</h1>
+          <Heading name="Công Nghệ Nâng Tầm Sức Khỏe" />
           <div className="text_content">
-            <span>
-              Chào mừng đến với Pharmatech, nơi tiến trình chăm sóc sức khỏe
+            <Paragrapb
+              text="Chào mừng đến với Pharmatech, nơi tiến trình chăm sóc sức khỏe
               được thực hiện nâng cấp, nơi thói quen bảo vệ bản thân được hòa
-              mình vào Blockchain, công nghệ tân tiến nhất mọi thời đại.
-            </span>
+              mình vào Blockchain, công nghệ tân tiến nhất mọi thời đại."
+            />
           </div>
           <div className="contract_content">
             <button>Contract</button>

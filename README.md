@@ -78,8 +78,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Project Directory Structure
 
+### 1 **`node_modules/`**
+
+Contains libraries and modules my project dependencies
+
+### 1 **`public/`**
+
+Contains static files and HTML output files that are not processed or compiled.
+
 ### 1. **`src/`**
 
-- `components/`: Holds React components used in the application (e.g., `Header.js`, `Footer.js`).
-  - `containers/`: Can contain larger React components (containers) or application pages.
-  - `assets/`: Contains static files such as images, CSS, and other static files.
+This directory contains the source code of my main React application
+
+### include:
+
+- `components/`: Include common React components used in your projectapplication ( `Header.js`,... ).
+
+- `assets/`: Contains files images, video.
+
+- `pages`: Contains pages of the application.
+  _Each page will contain additional components, assets of that page ex:`pages/homepages/component`: include component make pagehome _
+
+- `App.js`: Contains root component include route components
+
+- `index.js`: The React application is rendered, and the final content is displayed in the Document Object Model (DOM) of the web browser.
+
+-`package.json`: Configuration details for managing the project's dependencies, scripts, and other settings.

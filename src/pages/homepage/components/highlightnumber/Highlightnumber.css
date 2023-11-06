@@ -1,12 +1,12 @@
 .hlnumber {
+  width: 100vw;
+  overflow: hidden;
   background: linear-gradient(
     95deg,
     #95f9ff 0.55%,
     #96ffe6 31.59%,
     #87ffdb 88.72%
   );
-  width: 100vw;
-  height: 165px;
 }
 .fournumber {
   padding: 50px 368px;
@@ -39,4 +39,36 @@
   font-weight: 600;
   line-height: 15.75px; /* 98.438% */
   letter-spacing: 0.16px;
+}
+@media only screen and (max-width: 1024px) {
+  .fournumber {
+    padding: 50px 160px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .fournumber {
+    padding: 20px 30px;
+    gap: 36px;
+  }
+  .sub_number p {
+    color: var(--2, #001a22);
+    text-align: center;
+    font-family: "SVN-Gilroy", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.6px;
+    text-transform: capitalize;
+  }
+  .sub_number span {
+    color: var(--2, #001a22);
+    text-align: center;
+    font-family: "SVN-Gilroy", sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.12px;
+  }
 }

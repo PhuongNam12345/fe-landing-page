@@ -1,6 +1,8 @@
 .header {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(50px);
+  width: 100vw;
+  overflow: hidden;
 }
 .menu {
   display: flex;
@@ -91,21 +93,20 @@
   }
   .nav_menu {
   }
-  .nav_menu .menu_hide {
-    display: none;
-  }
 }
-@media only screen and (max-width: 376px) {
-  .menu {
-    padding: 24px;
-  }
+@media only screen and (max-width: 480px) {
   .nav_menu {
     display: none;
   }
   .connect {
     display: none;
   }
+  .menu {
+    padding: 24px;
+  }
   .icon_menu_mb {
     display: block;
   }
+}
+@media only screen and (max-width: 376px) {
 }
