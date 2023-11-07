@@ -1,6 +1,7 @@
 .package {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh;
+  overflow: hidden; */
 }
 .head_package {
   max-width: 70%;
@@ -53,7 +54,16 @@
     padding: 85px 154px 0 154px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .head_package {
+    padding: 0;
+    max-width: 100%;
+  }
+}
 @media only screen and (max-width: 480px) {
+  .package {
+    height: 100%;
+  }
   .main_package {
     padding: 24px;
   }

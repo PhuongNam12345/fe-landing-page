@@ -5,7 +5,10 @@ import Package from "./components/package/Package";
 import Banner from "./components/banner/Banner";
 import HightlightNumber from "./components/highlightnumber/Highlightnumber";
 import Token from "./components/token/Token";
+import Features from "./components/features/Features";
+import Community from "./components/joinourcommunity/Community";
 import "./HomePage.css";
+import Footers from "../../components/footer/Footer";
 
 const HomePage = () => {
   return (
@@ -20,6 +23,15 @@ const HomePage = () => {
       </section>
       <section className="section_3">
         <Package />
+      </section>
+      <section className="section_4">
+        <Features />
+      </section>
+      <section className="section_8">
+        <Community />
+      </section>
+      <section className="section_9">
+        <Footers />
       </section>
     </div>
   );

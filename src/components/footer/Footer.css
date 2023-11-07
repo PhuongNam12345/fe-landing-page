@@ -1,0 +1,130 @@
+.sub_content_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.traight {
+  display: none;
+  height: 0px;
+  align-self: stretch;
+  stroke-width: 1px;
+  stroke: var(--Black, #000);
+}
+.sub_content_footer .title {
+  color: var(--Black, #000);
+  font-family: "SVN-Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+.sub_content_footer .desc {
+  color: var(--Black, #000);
+  font-family: "SVN-Gilroy";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+.footer {
+  width: 100vw;
+  background: #f6feff;
+
+  /* overflow: hidden; */
+}
+.main_footer {
+  padding: 120px;
+  display: flex;
+  gap: 180px;
+}
+.left_footer {
+  display: flex;
+  flex-direction: column;
+}
+.info_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.logo_footer {
+  display: flex;
+  align-items: center;
+}
+.name_logo {
+  color: var(--4, #32434a);
+  font-family: "SVN-Gilroy";
+  font-size: 7.304px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.email_logo {
+  color: var(--Black, #000);
+
+  /* Body 3/Regular */
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+}
+.left_footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.language_footer button {
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--3, #fff);
+  box-shadow: 0px 7px 64px 0px rgba(0, 0, 0, 0.07);
+  display: flex;
+  padding: 14px 155px 14px 16px;
+}
+.language_footer span {
+  color: var(--2, #001a22);
+  font-family: "SVN-Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+.right_footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .main_footer {
+    padding: 120px 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main_footer {
+    padding: 40px 24px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .left_footer {
+    gap: 40px;
+    align-items: center;
+  }
+  .info_footer {
+    gap: 40px;
+  }
+  .right_footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .traight {
+    display: block;
+  }
+}
