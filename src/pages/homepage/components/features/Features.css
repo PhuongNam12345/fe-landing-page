@@ -4,6 +4,7 @@
   overflow: hidden;
 }
 .col_features {
+  min-height: 80%;
   padding: 61px 33px 52px 33px;
   display: flex;
   flex-direction: column;
@@ -71,6 +72,8 @@
   .col_title {
     font-size: 24px;
   }
+  .col_img {
+  }
   .col_desc {
     font-size: 16px;
   }
@@ -93,7 +96,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .features {
     height: 100%;
   }

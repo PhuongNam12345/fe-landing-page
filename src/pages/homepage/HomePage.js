@@ -9,6 +9,7 @@ import Features from "./components/features/Features";
 import Community from "./components/joinourcommunity/Community";
 import "./HomePage.css";
 import Footers from "../../components/footer/Footer";
+import Partners from "./components/partners/Partners";
 
 const HomePage = () => {
   return (
@@ -26,6 +27,9 @@ const HomePage = () => {
       </section>
       <section className="section_4">
         <Features />
+      </section>
+      <section className="section_7">
+        <Partners />
       </section>
       <section className="section_8">
         <Community />

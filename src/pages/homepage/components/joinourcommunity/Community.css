@@ -61,7 +61,7 @@
   align-items: center;
   gap: 22px;
 }
-h2 {
+.left_content_conmunity h2 {
   font-size: 48px;
 }
 /* p {
@@ -105,7 +105,7 @@ h2 {
     width: 100%;
     padding: 16px;
   }
-  h2 {
+  .left_content_conmunity h2 {
     font-size: 32px;
   }
   .sub_left {
