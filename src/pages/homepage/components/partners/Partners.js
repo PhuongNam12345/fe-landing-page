@@ -15,7 +15,7 @@ const Partners = () => {
           >
             <circle cx="20" cy="20.75" r="20" fill="#001A22" />
           </svg>
-          <span>Logo</span>
+          <span>LOGO</span>
         </div>
         <p>Brand name 3</p>
       </div>

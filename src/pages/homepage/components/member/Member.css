@@ -1,0 +1,92 @@
+.teammember {
+  background-color: beige;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+.card_position {
+  width: 100%;
+  display: flex;
+  padding: 32px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    129deg,
+    rgba(255, 255, 255, 0.6) 2.64%,
+    rgba(255, 255, 255, 0.2) 88.43%
+  );
+}
+.details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.name_ps {
+  color: var(--1, #16edb1);
+  text-align: center;
+  font-family: SVN-Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  letter-spacing: -0.4px;
+}
+.position_ps {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: SVN-Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 71.429% */
+  letter-spacing: -0.14px;
+  text-transform: lowercase;
+  padding-bottom: 8px;
+}
+.icon_ps {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.main_member {
+  padding: 100px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+.main_member h2 {
+  text-align: center;
+  font-family: SVN-Gilroy;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 120.833% */
+  letter-spacing: -0.96px;
+  text-transform: capitalize;
+}
+.content_position {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.list_position {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .teammember {
+    display: none;
+  }
+}

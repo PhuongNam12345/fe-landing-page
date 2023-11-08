@@ -57,22 +57,11 @@ const Footers = () => {
             <span className="email_footer">contact@pharmatech.io</span>
           </div>
           <div className="language_footer">
-            <span>Language</span>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.16903 9C7.89535 9 7.60004 9.11153 7.54649 9.39012C7.49869 9.63875 7.56335 9.90793 7.74046 10.101L12.0262 14.772C12.3051 15.076 12.7574 15.076 13.0363 14.772L17.322 10.101C17.4992 9.90794 17.5638 9.63875 17.516 9.39012C17.4625 9.11153 17.1671 9 16.8935 9L8.16903 9Z"
-                fill="black"
-              />
-            </svg>
+            <select class="custom-select">
+              <option value="option1">Language</option>
+              <option value="option2"></option>
+              <option value="option3"></option>
+            </select>
           </div>
         </div>
         <div className="right_footer">

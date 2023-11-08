@@ -81,7 +81,6 @@
   }
   .right_content_conmunity {
     flex-wrap: wrap;
-    width: auto;
   }
   .email_input {
     width: 100%;
