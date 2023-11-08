@@ -78,6 +78,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.language_footer {
+  display: flex;
+}
 .language_footer button {
   flex-shrink: 0;
   border-radius: 6px;
@@ -127,4 +130,9 @@
   .traight {
     display: block;
   }
+}
+@media only screen and (max-width: 376px) {
+}
+.language_footer button {
+  padding: 14px 50px 14px 16px;
 }

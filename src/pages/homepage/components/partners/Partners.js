@@ -2,20 +2,22 @@ import React from "react";
 import "./Partners.css";
 import Heading from "../../../../components/heading/Heading";
 const Partners = () => {
-  const BrandName = () => {
+  const BrandName = (props) => {
     return (
       <div className="brand_name">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="41"
-          viewBox="0 0 40 41"
-          fill="none"
-        >
-          <circle cx="20" cy="20.75" r="20" fill="#16EDB1" />
-        </svg>
-
-        <p>Brand name 1</p>
+        <div className="logo_brand">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="41"
+            viewBox="0 0 40 41"
+            fill="none"
+          >
+            <circle cx="20" cy="20.75" r="20" fill="#001A22" />
+          </svg>
+          <span>Logo</span>
+        </div>
+        <p>Brand name 3</p>
       </div>
     );
   };
@@ -27,9 +29,8 @@ const Partners = () => {
         </div>
         <div className="brand_content">
           <div className="list_brand">
-            <div className="brand_select">
-              <BrandName />
-            </div>
+            <BrandName />
+
             <BrandName />
             <BrandName />
             <BrandName />
