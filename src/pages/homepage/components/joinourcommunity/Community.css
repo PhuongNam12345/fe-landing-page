@@ -119,8 +119,5 @@
     justify-content: center;
   }
 }
-@media only screen and (max-width: 768px) {
-  .email_input {
-    padding: 8px 0px;
-  }
+@media only screen and (max-width: 480px) {
 }

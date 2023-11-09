@@ -6,7 +6,7 @@ const Benefits = () => {
     <div className="benefits">
       <div className="main_benefits">
         <div className="head_benefits">
-          <Heading name="Benefits For Users." />
+          <Heading name="Benefits For Users" />
         </div>
         <div className="content_benefits">
           <div className="content_one">

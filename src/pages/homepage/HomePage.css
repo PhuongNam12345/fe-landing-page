@@ -2,4 +2,5 @@
   background-image: url("components/assets/Ellipse93.png"),
     url("components/assets/Ellipse92.png");
   background-size: contain;
+  overflow-x: hidden;
 }
