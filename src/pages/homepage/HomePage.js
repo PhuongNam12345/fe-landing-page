@@ -11,6 +11,7 @@ import "./HomePage.css";
 import Footers from "../../components/footer/Footer";
 import Partners from "./components/partners/Partners";
 import TeamMember from "./components/member/Member";
+import Benefits from "./components/benefits/Benefits";
 
 const HomePage = () => {
   return (
@@ -28,6 +29,9 @@ const HomePage = () => {
       </section>
       <section className="section_4">
         <Features />
+      </section>
+      <section className="section_5">
+        <Benefits />
       </section>
       <section className="section_6">
         <TeamMember />

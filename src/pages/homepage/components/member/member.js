@@ -10,7 +10,7 @@ const TeamMember = () => {
           <img src={Imgps} alt="alt"></img>
         </div>
         <div className="details">
-          <span className="name_ps">Namess</span>
+          <span className="name_ps">Name</span>
           <span className="position_ps">position</span>
         </div>
         <div className="icon_ps">

@@ -13,7 +13,7 @@
   background: var(--3, #fff);
   box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.07);
   flex-shrink: 0;
-  padding: 16px 207px 16px 16px;
+
   flex-shrink: 0;
   color: var(--2, #001a22);
   font-family: SVN-Gilroy;
@@ -21,6 +21,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 141.176% */
+}
+.email_input {
+  padding: 16px 207px 16px 16px;
 }
 .btn_start {
   /* width: 50%; */
@@ -70,10 +73,13 @@
 .sub_left {
   max-width: 70%;
 }
+.icon_social path:hover {
+  fill: #00ffb8;
+}
 
 @media only screen and (max-width: 1024px) {
   .sub_left {
-    max-width: 60%;
+    max-width: 100%;
   }
   .main_community {
     padding: 40px 80px;
@@ -83,8 +89,7 @@
     flex-wrap: wrap;
   }
   .email_input {
-    width: 100%;
-    padding: 16px;
+    padding: 16px 131.576px 16px 16px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -112,5 +117,10 @@
   }
   .left_content_conmunity .icon_social {
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .email_input {
+    padding: 8px 0px;
   }
 }
