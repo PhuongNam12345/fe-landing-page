@@ -10,9 +10,8 @@ import Community from "./components/joinourcommunity/Community";
 import "./HomePage.css";
 import Footers from "../../components/footer/Footer";
 import Partners from "./components/partners/Partners";
-import TeamMember from "./components/member/Member";
 import Benefits from "./components/benefits/Benefits";
-
+import TeamMember from "./components/member/index";
 const HomePage = () => {
   return (
     <div className="home_page">
