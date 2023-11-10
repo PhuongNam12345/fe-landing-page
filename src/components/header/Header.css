@@ -101,9 +101,9 @@
   .connect {
     display: none;
   }
-  .menu {
+  /* .menu {
     padding: 80px;
-  }
+  } */
   .icon_menu_mb {
     display: block;
   }

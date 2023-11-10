@@ -139,7 +139,7 @@ h1 {
   .contract_content .sub_contract {
     justify-content: left;
     gap: 0px;
-    padding: 5px;
+    padding: 12px;
   }
   .contract_content button {
     width: 100%;
