@@ -7,7 +7,7 @@ import HightlightNumber from "./components/highlightnumber/Highlightnumber";
 import Token from "./components/token/Token";
 import Features from "./components/features/Features";
 import Community from "./components/joinourcommunity/Community";
-import "./HomePage.css";
+import "./index.css";
 import Footers from "../../components/footer/Footer";
 import Partners from "./components/partners/Partners";
 import Benefits from "./components/benefits/Benefits";
