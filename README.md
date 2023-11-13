@@ -104,3 +104,18 @@ This directory contains the source code of my main React application
 - `index.js`: The React application is rendered, and the final content is displayed in the Document Object Model (DOM) of the web browser.
 
 -`package.json`: Configuration details for managing the project's dependencies, scripts, and other settings.
+
+### redux-toolkid
+
+# Onclick Login
+
+- Client sent request include email and password to sever.
+- Sever check request, if true then return token to client.
+- Usedispatch() actions (setLogin) is define in reducres to push action and token to reducers
+
+* setLogin(state,action) handles state and action.payload, here update state by value of token.
+* setLogout(state) update value state is null.
+
+- Redux store is created by configureStore of redux-toolkit received from reducres.
+
+* useSelector() to read data from store.
