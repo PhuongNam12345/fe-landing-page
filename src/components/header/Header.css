@@ -2,7 +2,8 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(50px);
   width: 100vw;
-  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 .menu {
   display: flex;

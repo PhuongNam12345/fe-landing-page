@@ -23,8 +23,8 @@
   backdrop-filter: blur(20px);
 }
 .col_img {
-  width: 100%;
-  height: 100%;
+  width: fit-content;
+  height: auto;
 }
 .col_title {
   text-align: center;

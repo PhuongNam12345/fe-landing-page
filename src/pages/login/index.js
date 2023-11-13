@@ -1,0 +1,109 @@
+import { useState } from "react";
+import "./login.css";
+import { Link, Navigate } from "react-router-dom";
+import { Alert, AlertIcon, AlertTitle } from "@chakra-ui/react";
+export const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [token, setToken] = useState("");
+
+  const handleLogin = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      if (response.status === 200) {
+        console.log(data);
+        const { token } = data;
+        const { role } = data;
+        // const roles = localStorage.getItem('role')
+        setToken(data);
+        // Lưu token vào localStorage
+        localStorage.setItem("token", token);
+        localStorage.setItem("role", role);
+      } else {
+        console.log("Đăng nhập không thành công.");
+      }
+    } catch (err) {
+      console.log("lỗi r");
+    }
+  };
+  return (
+    <div className="app">
+      <div className="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="671"
+          height="618"
+          viewBox="0 0 671 618"
+          fill="none"
+        >
+          <path
+            opacity="0.05"
+            d="M-83.9121 567.869C-27.9433 528.185 -6.7814 475.86 -20.4263 410.896C-40.8936 313.449 -18.503 251.242 43.1875 246.178C104.878 241.115 163.096 311.765 178.681 396.334C194.266 480.903 280.957 483.243 315.34 466.488C349.724 449.733 369.462 415.948 368.073 379.129C365.001 297.7 253.327 232.819 255.94 157.746C258.553 82.6743 350.376 55.1036 407.979 122.715C410.817 126.046 413.708 129.181 416.644 132.126C475.674 191.34 553.026 173.844 588.396 129.923C649.731 53.7617 621.761 -27.6337 523.35 -82.8623C375.196 -169.904 296.342 -265.311 286.789 -369.083"
+            stroke="url(#paint0_linear_2_82)"
+            stroke-width="100"
+            stroke-linecap="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_2_82"
+              x1="-83.9121"
+              y1="567.869"
+              x2="604.432"
+              y2="-364.791"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#4E7577" />
+              <stop offset="1" stop-color="#65D5FC" />
+              <stop offset="1" stop-color="#23445B" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div className="content_login">
+        <div className="content_left">
+          <div className="form_login">
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="youname@gmail.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              ></input>
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input
+                type="password"
+                name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              ></input>
+            </div>
+            <div className="login">
+              <input
+                type="submit"
+                onClick={handleLogin}
+                value="Login"
+                className="signup"
+                href="asas"
+              ></input>
+              <p>
+                Don't have an account?
+                <Link to="/">Sign up</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

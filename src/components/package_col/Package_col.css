@@ -41,7 +41,8 @@
   backdrop-filter: blur(20px);
 }
 .pack_col img {
-  width: 100%;
+  width: fit-content;
+  height: auto;
 }
 .pack_des {
   display: flex;
