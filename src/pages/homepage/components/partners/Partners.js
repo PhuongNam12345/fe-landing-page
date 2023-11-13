@@ -2,7 +2,7 @@ import React from "react";
 import "./Partners.css";
 import Heading from "../../../../components/heading/Heading";
 const Partners = () => {
-  const BrandName = (props) => {
+  const BrandName = () => {
     return (
       <div className="brand_name">
         <div className="logo_brand">

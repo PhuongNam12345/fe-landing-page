@@ -4,6 +4,7 @@
   width: 100vw;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 .menu {
   display: flex;
@@ -102,9 +103,6 @@
   .connect {
     display: none;
   }
-  /* .menu {
-    padding: 80px;
-  } */
   .icon_menu_mb {
     display: block;
   }
