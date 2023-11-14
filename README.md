@@ -119,5 +119,15 @@ This directory contains the source code of my main React application
 - Redux store is created by configureStore of redux-toolkit received from reducres.
 
 * useSelector() to read data from store.
-  #Flow redux-toolkit in app
-  ![alt img](image.png)
+
+# Flow redux-toolkit in app
+
+![Alt text](image-1.png)
+
+### component
+
+UI call API to Backend.
+UI login: input email + password , event login logout
+Redux store: state is defined, reducers include action + state
+Provider support connections UI and Redux store
+(hook useDispatch() push acction and payload, useSelector read state from Redux store)
