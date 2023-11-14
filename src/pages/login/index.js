@@ -4,7 +4,12 @@ import "./index.css";
 import { useDispatch } from "react-redux";
 import { setLogin } from "../../redux/authSlice";
 import { Link } from "react-router-dom";
+import useChecklogin from "../../hook.js/useChecklogin";
+// import useChecklogin from "../../hook.js/useChecklogin";
+import { Navigate } from "react-router-dom";
+
 export const Login = () => {
+  const { isLogin } = useChecklogin();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
@@ -21,10 +26,9 @@ export const Login = () => {
       const data = await response.json();
       if (response.status === 200) {
         const { token } = data;
-        const { role } = data;
-        localStorage.setItem("token", token);
-        localStorage.setItem("role", role);
-        dispatch(setLogin(data));
+        // const { role } = data;
+        console.log(token);
+        dispatch(setLogin(token));
       } else {
         console.log("Đăng nhập không thành công.");
       }
@@ -68,9 +72,10 @@ export const Login = () => {
               ></input>
               <p>
                 Don't have an account?
-                <Link to="/">Sign up</Link>
+                <Link to="/info">Sign up</Link>
               </p>
             </div>
+            {isLogin === true ? <Navigate to="/info" replace={true} /> : null}
           </div>
         </div>
       </div>
