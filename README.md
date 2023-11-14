@@ -126,8 +126,8 @@ This directory contains the source code of my main React application
 
 ### component
 
-UI call API to Backend.
-UI login: input email + password , event login logout
-Redux store: state is defined, reducers include action + state
-Provider support connections UI and Redux store
-(hook useDispatch() push acction and payload, useSelector read state from Redux store)
+- UI call API to Backend.
+- UI login: input email + password , event login logout
+- Redux store: state is defined, reducers include action + state (reducers are created by configureStore in redux-toolkit)
+- Provider support connections UI and Redux store
+  (hook useDispatch() push acction and payload, useSelector read state from Redux store)
