@@ -119,3 +119,5 @@ This directory contains the source code of my main React application
 - Redux store is created by configureStore of redux-toolkit received from reducres.
 
 * useSelector() to read data from store.
+  #Flow redux-toolkit in app
+  ![alt img](image.png)
