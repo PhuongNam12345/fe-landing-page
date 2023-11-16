@@ -3,15 +3,15 @@ import "./index.css";
 // import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { setLogin } from "../../redux/authSlice";
-import { Link } from "react-router-dom";
-import useChecklogin from "../../hook.js/useChecklogin";
+import { Link, Navigate } from "react-router-dom";
+
 // import useChecklogin from "../../hook.js/useChecklogin";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 
 export const Login = () => {
-  const { isLogin } = useChecklogin();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [status, setStatus] = useState(0);
   const dispatch = useDispatch();
   // const tokenn = useSelector((state) => state.auth.authToken);
   const handleLogin = async () => {
@@ -26,9 +26,14 @@ export const Login = () => {
       const data = await response.json();
       if (response.status === 200) {
         const { token } = data;
+        const { id } = data;
+        setStatus(200);
+        localStorage.setItem("token", token);
+        localStorage.setItem("id", id);
         // const { role } = data;
-        console.log(token);
-        dispatch(setLogin(token));
+
+        console.log(data);
+        dispatch(setLogin({ token, id }));
       } else {
         console.log("Đăng nhập không thành công.");
       }
@@ -70,12 +75,12 @@ export const Login = () => {
                 className="signup"
                 href="asas"
               ></input>
+              {status == 200 ? <Navigate to="/"></Navigate> : null}
               <p>
                 Don't have an account?
                 <Link to="/info">Sign up</Link>
               </p>
             </div>
-            {isLogin === true ? <Navigate to="/info" replace={true} /> : null}
           </div>
         </div>
       </div>

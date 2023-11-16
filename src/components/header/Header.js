@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+
 const Header = () => {
   return (
     <header className="header">
@@ -45,6 +46,7 @@ const Header = () => {
             <li>
               <a href="">Home</a>
             </li>
+
             <li>
               <a href="">Package</a>
             </li>
@@ -58,7 +60,7 @@ const Header = () => {
               <a href="">Team</a>
             </li>
             <li>
-              <a href="">Document</a>
+              <a href="/info">Document</a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -73,6 +75,12 @@ const Header = () => {
                   fill="black"
                 />
               </svg>
+            </li>
+            <li>
+              <a href="/info">Infomation</a>
+            </li>
+            <li>
+              <a href="/logout">Logout</a>
             </li>
           </ul>
         </div>
