@@ -132,7 +132,7 @@ This directory contains the source code of my main React application
 - Provider support connections UI and Redux store
   (hook useDispatch() push acction and payload, useSelector read state from Redux store)
   ########
-- gửi thông tin email password đến backend, check DB và trả về đăng nhập thành công và token được tạo jwt
+- gửi thông tin email password đến backend, check DB và trả về đăng nhập thành công, token được tạo jwt,id user lưu ở local storage.
 - UI muốn xem thông tin người dùng từ DB cần gọi API get-info , trước đó cần kiểm tra users đã login chưa.
-  { kiểm tra token có trên redux store không, nếu có thì users đã đăng nhập, không thì chưa đăng nhập}
+  { kiểm tra token, id có trên redux store không, nếu có thì users đã đăng nhập, không thì chưa đăng nhập}
 - Backend kiểm tra token nếu đúng sẽ trả về thông tin người dùng
